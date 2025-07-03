@@ -1,0 +1,156 @@
+.login-container {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.logo-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+main {
+    flex: 1;
+    background-color: var(--verdin);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    margin-bottom: 10rem;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--azul-petroleo);
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.label-email label,
+.label-password label {
+    display: flex;
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    color: var(--azul-petroleo);
+    gap: 1rem;
+}
+
+.label-email input {
+    margin-top: 1rem;
+}
+
+form input {
+    width: 100%;
+    border-radius: 0.6rem;
+    border: 1px solid #ccc;
+    padding: 1.3rem;
+    min-width: 30rem;
+}
+
+.error-msg {
+    color: red;
+    font-size: 1.4rem;
+    visibility: hidden;
+}
+
+form input:focus {
+    border: 0.1rem solid var(--azul-petroleo);
+    outline: none;
+}
+
+form input:invalid:not(:focus):not(:placeholder-shown) {
+    border: 1px solid red;
+}
+
+form input:invalid:not(:focus):not(:placeholder-shown)~.error-msg {
+    visibility: visible;
+}
+
+.label-password {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forgot {
+    font-size: 1.4rem;
+    color: var(--azul-petroleo);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.forgot:hover {
+    text-decoration: underline;
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper button {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.password-wrapper img {
+    width: 100%;
+    height: 100%;
+}
+
+.btn-primary {
+    width: 100%;
+    background: var(--azul-petroleo);
+    color: #fff;
+    border: none;
+    border-radius: 0.6rem;
+    padding: 1.6rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background .25s;
+    margin-top: 3.2rem;
+    margin-bottom: 3.2rem;
+}
+
+.btn-primary:hover {
+    background: var(--azul-petroleo-hover);
+}
+
+.signup {
+    font-size: 1.4rem;
+}
+
+.signup a {
+    color: var(--azul-petroleo);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.signup {
+    color: var(--azul-petroleo);
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
