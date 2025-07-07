@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/enviar_proposta.css" />
+  <!-- mudar o link do css -->
+  <link rel="stylesheet" href="../css/global.css" />
+  <title>Enviar_Proposta</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="/projeto-web-main/projeto-web-main/html/assets/Logo.png" alt="" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/home" data-page="home" class="home">Home</a></li>
+        <li>
+          <a href="/projetos" data-page="projetos" class="projetos">Projetos</a>
+        </li>
+        <li>
+          <a href="/contato" data-page="contato" class="contato">Contato</a>
+        </li>
+        <li><a href="/sobre" data-page="sobre" class="sobre">Sobre</a></li>
+      </ul>
+    </nav>
+    <a href="/login" class="btn-entrar" data-page="login">Entrar</a>
+  </header>
+  <main>
+    <div class="projeto">
+
+      <h1>Enviar proposta de projeto</h1>
+
+      <div class="lateral">
+        <form action="">
+          <div class="titulo">
+            <label for="">Título do projeto</label>
+            <input type="text" placeholder="Insira o título do projeto" />
+          </div>
+          <div class="curso">
+            <label for="">Curso</label>
+            <select>
+              <option value="" disabled selected hidden>Selecione o curso</option>
+              <option value="">Sistemas de informação</option>
+              <option value="">Engenharia da Computação</option>
+              <option value="">Saúde Coletiva</option>
+            </select>
+          </div>
+          <div class="descricao">
+            <label for="">Descrição do projeto</label>
+            <textarea id="" name="" placeholder="Descreva o seu projeto..."></textarea>
+          </div>
+          <div class="data">
+            <label for="">Data de início</label>
+            <input type="date" name="" id="" />
+          </div>
+          <div class="duracao">
+            <label for="">Duração (Meses)</label>
+            <input type="text" name="" id="" placeholder="Digite a duração do projeto..." />
+          </div>
+          <div class="resultado">
+            <label for="">Resultados esperados</label>
+            <textarea id="" name="" placeholder="Descreva..."></textarea>
+          </div>
+      </div>
+
+      <div class="box">
+        <label class="upload-arquivo" for="arquivo">
+          <div class="uploud">
+            <h3>Carregar documento de proposta de projeto</h3>
+            <p>Arraste e solte ou navegue para enviar o documento da sua proposta.<br>
+              Formatos aceitos: PDF, DOCX. Tamanho máximo: 10 MB.</p>
+          </div>
+          <h4>Navegar pelos arquivos</h4>
+        </label>
+
+        <input type="file" id="arquivo" name="arquivo" style="display: none" />
+      </div>
+
+      <div class="esquerda">
+        <button class="btn-enviar">Enviar proposta</button>
+      </div>
+
+      </form>
+    </div>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,233 @@
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5rem;
+    border-bottom: 1px solid #e5e8eb;
+}
+
+.logo img {
+    height: 40px;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: var(--magenta-hover);
+    border-bottom: 1px solid currentColor;
+
+}
+
+.btn-entrar {
+    background-color: var(--magenta);
+    color: #ffffff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 1.2rem;
+    margin-left: 7rem;
+    font-weight: 600;
+}
+
+.btn-entrar:hover {
+    background-color: var(--magenta-hover);
+}
+
+/* main */
+main {
+    width: 100%;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    padding: 0 10vw;
+}
+
+h1 {
+    font-size: clamp(1rem, 3vw, 3.2rem);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: clamp(1rem, 3vw, 2rem);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+p , h4{
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    font-weight: 400;
+    line-height: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+/* form */
+label {
+    color: #121417;
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(10px, 3vw, 16px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+textarea, input, option {
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(10px, 3vw, 16px);
+    font-weight: 400;
+    line-height: 24px;
+    color: #3a3f46;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.lateral {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo input {
+    width: 50%;
+    padding: 2rem 6rem 2rem 2rem;
+    border: 1px solid transparent;
+    border-radius: 1.2rem;
+    background-color: #f2f2f5;
+    font-size: 1.6rem;
+}
+
+.curso select {
+    width: 50%;
+    padding: 2rem 0rem 2rem 2rem;
+    border: 1px solid transparent;
+    border-radius: 1.2rem;
+    background-color: #f2f2f5;
+    font-size: 1.6rem;
+}
+
+.descricao textarea {
+    width: 50%;
+    padding: 2rem 6rem 2rem 2rem;
+    border: 1px solid transparent;
+    border-radius: 1.2rem;
+    background-color: #f2f2f5;
+    font-size: 1.6rem;
+}
+
+.data input {
+    width: 25%;
+    padding: 2rem 1rem 2rem 2rem;
+    border: 1px solid transparent;
+    border-radius: 1.2rem;
+    background-color: #f2f2f5;
+    font-size: 1.6rem;
+}
+
+.duracao input {
+    width: 30%;
+    padding: 2rem 6rem 2rem 2rem;
+    border: 1px solid transparent;
+    border-radius: 1.2rem;
+    background-color: #f2f2f5;
+    font-size: 1.6rem;
+}
+
+.resultado textarea {
+    width: 50%;
+    padding: 2rem 6rem 2rem 2rem;
+    border: 1px solid transparent;
+    border-radius: 1.2rem;
+    background-color: #f2f2f5;
+    font-size: 1.6rem;
+}
+
+/* arquivo */
+.upload-arquivo {
+    display: inline-block;
+    background-color: #ffffff;
+    width: 69vw;
+    height: 30vh;
+    padding: 2vh 2vw;
+    margin-top: 2vh;
+    color: #333;
+    text-align: center;
+    border: 2px dashed #DEE0E3;
+    border-radius: 2vh;
+    font-size: 2.2vh;
+    transition: background-color 0.3s;
+}
+
+.upload-arquivo:hover {
+    background-color: #dddddd;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block: 30px
+}
+
+.btn-enviar {
+    width: 30%;
+    border-radius: 12px;
+    background: #073E5A;
+    display: flex;
+    width: 147px;
+    height: 40px;
+    padding: 9.5px 16px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    color: #ffffff;
+    border: none;
+    font-weight: 550;
+}
+
+.esquerda {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+
+@media (max-width: 920px) {
+
+    .titulo input,
+    .curso select,
+    .descricao textarea,
+    .data input,
+    .duracao input,
+    .resultado textarea {
+        width: 100%;
+    }
+
+    .upload-arquivo{
+        width: 100%;
+        height: 20vh;
+    }
+    .upload-arquivo p{
+        display: none;
+    }
+}
